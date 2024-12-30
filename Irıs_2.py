@@ -13,6 +13,8 @@ iris.columns = ['Sepal_Length', 'Sepal_Width', 'Petal_Length', 'Petal_Width', 'S
 
 print(iris.columns)
 print(iris.isnull().sum())
+"""
+Note: This code snippet were for EDA.
 
 iris['Species'].value_counts().plot(kind='bar', color =['skyblue','orange','red'])
 plt.title('Species counts.')
@@ -35,9 +37,9 @@ plt.title('Sepal Length Distribution by Species.')
 plt.xlabel('Species')
 plt.ylabel('Sepal_Length')
 plt.show()
+"""
 
-
-
+#KNN methodology starts here, do not forget to import crucial libraries for it.
 scaler = StandardScaler()
 #StandardScaler only works with numerical data, do not forget. so do not ever inclue 'Species' and double check with .dtypes.
 features = ['Sepal_Length', 'Sepal_Width', 'Petal_Length', 'Petal_Width']
